@@ -1,0 +1,37 @@
+<!-- src/app/shopping-list/shopping-list.component.html -->
+<div class="shopping-list-container">
+  <h1>Shopping List</h1>
+  <h2>Let's go shopping. ...</h2>
+  <div class="input-container">
+    <label for="item">Item:</label>
+    <input id="item" [(ngModel)]="newItem" placeholder="Enter item" />
+    <label for="quantity">Quantity:</label>
+    <input
+      id="quantity"
+      [(ngModel)]="newQuantity"
+      placeholder="Enter quantity"
+    />
+    <button (click)="addItem()">Add Item</button>
+    <button (click)="removeItem(0)">Remove Item</button>
+  </div>
+  <table class="shopping-table">
+    <thead>
+      <tr>
+        <th>Item Number  </th>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of shoppingItems; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.quantity }}</td>
+        <td>
+          <button class="delete-btn" (click)="removeItem(i)">Remove Item</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

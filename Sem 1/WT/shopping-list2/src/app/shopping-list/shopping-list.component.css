@@ -1,0 +1,76 @@
+/* src/app/shopping-list/shopping-list.component.css */
+.shopping-list-container {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  margin: 50px;
+  border-radius: 5%;
+  background-color: rgb(155, 126, 222);
+  border: 3px solid rgb(155, 126, 222);
+  color: rgb(0, 34, 128);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: auto;
+  padding: 2px;
+}
+
+input {
+  margin: 4px auto;
+  border-radius: 5%;
+  padding: 8px;
+}
+
+button {
+  background-color: rgb(131, 33, 97);
+  border: 2px solid rgb(131, 33, 97);
+  border-radius: 10%;
+
+  color: white;
+  padding: 7px 10px;
+
+  margin: 6px auto;
+  cursor: pointer;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: tan;
+}
+
+.shopping-table {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+
+td,
+th {
+  border: 1px solid brown;
+  padding: 8px;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(188, 210, 238);
+  color: rgb(82, 5, 10);
+}
+
+.delete-btn {
+  background-color: red;
+}
+
+.delete-btn:hover {
+  background-color: rgb(84, 3, 3);
+}
