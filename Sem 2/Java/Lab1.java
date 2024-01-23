@@ -12,7 +12,14 @@ public class Lab1{
         // Scanner s = new Scanner(System.in);
         // System.out.println(s.nextLine());
         // s.close();;
-        triangle(5);
+        // triangle(5);
+        // System.out.println(octalToDecimal(132));
+        // prime(10);
+        // printDigits(15089);
+        // PersonalDeta();
+        // System.out.println(palindrome(1312));.
+        // age(04,06,2002);
+        divisionOfNo();
     }
 
     //1.      To Generate Multiplication Table
@@ -87,10 +94,37 @@ public class Lab1{
         c[s]=temp;
     }
     //6.      W.A.P to Print one number at a time , input must be from the user
-
+    static void printDigits(int i){
+        int[] arr=new int[5];int j=0;
+        while(i>0){
+            arr[j]=i%10;
+            j++;
+            i/=10;
+        }
+        for(int k=j-1;k>=0;k--){
+            System.out.println(arr[k]);
+        }
+    }
 
     //7.      W.A.P to print your Personal details ( Name , Gender, Address , Phone No.,College Name )
-
+    static void PersonalDeta(){
+        Scanner s = new Scanner(System.in);
+        System.out.println("Name: ");
+        String name = s.next();
+        System.out.println("Gender: ");
+        String gender = s.next();
+        System.out.println("Address ");
+        String add = s.next();
+        System.out.println("Phone No ");
+        String phone = s.next();
+        System.out.println("College Name ");
+        String colg = s.next();
+        System.out.println("Your name is " + name);
+        System.out.println("Your geder is " + gender);
+        System.out.println("Your address is " + add);
+        System.out.println("Your phone is " + phone);
+        System.out.println("Your college is " + colg);
+    }
 
     //8.      W.A.P to check whether a number is  Odd or even
     static boolean isOdd(int n){
@@ -98,7 +132,14 @@ public class Lab1{
     }
     //9.       W.A.P to check whether a number is palindrome or Not. 
     static boolean palindrome(int n){
-        
+        int reverse = 0;
+        int original = n;
+        while(n>0){
+            reverse*=10;
+            reverse+=(n%10);
+            n/=10;
+        }
+        return reverse==original;
     }
     //10.     W.A.P to add 10  numbers of one series .(Example :- If the user inputs 3 then its should take  numbers from 3,4,5……..12)
     static void series(int n){
@@ -107,6 +148,10 @@ public class Lab1{
         }
     }
     //11.      W.A.P to print your Age based on your Birth date
+    static void age(int date, int month, int year){
+        int cdate=23, cmonth=1, cyear=2024;
+        System.out.println("You are "+ (cdate-date) + "days " + (month-cmonth) + "months " + (cyear-year-1) + "years old.");
+    }
     
     // 12.      W.A.P to create  the following output :-
     //          1
@@ -124,61 +169,77 @@ public class Lab1{
     }
 
     //13.  W.A.P to accept any two numbers and perform division on it ( If the number is in decimal value then convert them into a whole number)
-    
+    static void divisionOfNo(){
+        Scanner sc = new Scanner(System.in);
+        float f = sc.nextFloat();
+        float s = sc.nextFloat();
+        System.out.println((int)(f/s));
+    }
 
     //14.  W.A.P to convert number in characters (E.g. 123 , Output One Two Three )
     static void numToChar(int n){
-        String ans = "";
-        switch (n) {
-            case 1:
-                ans+="one ";
-                break;
         
-            case 2:
-                ans+="two ";
-                break;
-            
-            case 3:
-                ans+="three";
-                break;
-            
-            case 4:
-                
-                break;
-        
-            case 5:
-                
-                break;
-    
-            case 6:
-                
-                break;
-
-            case 7:
-                
-                break;
-
-            case 8:
-                
-                break;
-        
-            default:
-                break;
-        }
     }
     // 15.  To convert Number to word
     // 16.  Java Program to Check Whether a Number is Prime or Not using different control structure
     // 17. To Check a Leap year
+    static boolean leap(int n){
+        return n%4==0;
+    }
     // 18. To check whether a number is positive or negative
+    static boolean isPositive(int n){
+        return n>0;
+    }
     // 19. To calculate the sum of Natural Numbers
+    static int sum(int i){
+        return i*(i+1)/2;
+    }
     // 20. To Find the factorial of a Number
+    static int fac(int i){
+        if(i<=1){
+            return i;
+        }
+        return i*fac(i-1);
+    }
     // 21.To display all prime numbers from 1 to N.
+    static void prime(int n){
+        for(int i=1; i<=n; i++){
+            if(isPrime(i)){
+                System.out.println(i);
+            }
+        }
+    }
+
+    private static boolean isPrime(int n) {
+        int i =2;
+        while(i*i<n){
+            if(n%i==0){return false;}
+            i++;
+        }
+        return true;
+    }
     // 22.To check whether Input character is Vowel or Not.
+    static boolean isVowel(char ch){
+        return ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u';
+    }
     // 23.To calculate simple Interest
+    static int simpleInterest(int amount,int rate,int years){
+        return amount*rate*years/100;
+    }
     // 24.To convert octal to decimal conversion
+    static int octalToDecimal(int oct){
+        int base=1, ans=0;
+        while(oct>0){
+            ans+=(oct%10)*base;
+            base*=8;
+            oct/=10;
+        }
+        return ans;
+    }
     // 25. Conclude what is the difference between JAVA and C++.
     //1. Java do not have concept of pointers it is all call by reference by default
     //
+
 
 
 }
