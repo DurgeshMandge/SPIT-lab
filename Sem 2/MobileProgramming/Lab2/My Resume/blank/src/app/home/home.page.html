@@ -1,35 +1,80 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" >
   <ion-toolbar>
-    <ion-title class="name">
-      Durgesh Mandge
-    </ion-title>
-  </ion-toolbar>
+      <ion-row>
+      <ion-col>
+        <ion-title >
+          <h1>
+            Durgesh Mandge
+          </h1>
+        </ion-title>
+        <div class="margin-left">
+          <a href="https://github.com/DurgeshMandge" class="link">GitHub Profile<img class="icon" src="data:image/png;base64,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" alt=""></a> <br>
+          <a href="https://www.linkedin.com/in/durgesh-mandge-2576b9244/" class="link">LinkedIn Profile <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAdVBMVEUAe7X///8AdbIAcK9dmsTx9fn7/P2gvdh0o8rp8PYAZqsAebQAd7MAbq+VuNYAc7EAaq3L3+zW5/G71+iHsdJ3qs6Tv9q60uQ8ir09ksFtqM0sh7sWgLgEg7kpf7ddn8hSk8KvzeKhx96JuNV9sdFKmcWoxNyOYzq3AAAKbUlEQVR4nN2dW6OqKhCAEZJygZHaxe7Z7f//xKPVWpkKDqnAPvOyH3a2/AKGYWaYQV5n8bM1Fwx1EMbxOvO7vwnq9jj1o00Y4i4kT+Ezsol8ahHGj+9r0m1Q3sJEuL7HncanA4wfTVPSw6C8hZPtNOqA8zWMn8x3hPeJ8sTZzZOvcb6EocliR3qaX5/CyG6RfLl2voLJUbZ9LZUGHLH9EucbmHhxYL1PsLJwflgEZmCWBz4oygOHHZYGYKJ9/8u+EYfso4Fh6GY22FqpCpttNFeOFoyf7IgplELIYaWlpnVg4is2MsPewvE11hgdOAxdnYZTx1IRpxWcBgzjXw69mi5gmsMFPNWgMPHR9BT7FY6Pcb8wSYrNT7GXMJwmfcIs7UyxX8HAHRQEs+DWhuUpjC96ggmOFrRYlUYcAcZaO0w8MrpRyoSM2tVAK0x0coIlpzm12mptMM6wQGhaYJJU2GZ4i2hT0WqYxK5Kroo4qGmUMMnBoXEpRByUM00FE6VOjUshOFXRKGCi1JI1phKcKjS0HCY4OTcuheCTfPeUwgRHJ1nydTOS0shg/Kt9G6ZZmLjKDjgSGLpUsjCOMRbcjv3JxFJy+JTAZEjxnkygdDSZTEZbZkV1M5TpwKgUGcO7eRYFPvXj5D5BNlYWlyjoRhilIhOLUtQhyG42Bkei0hphjooXJJV4XbCwcaAWRyjMOZR/yyyrLj56tWFXh2cYTKx4uVnTdxxt0IgGS6AOQ7fyBSOavb82vFB4W3+VOsxVsfhZ8+abKeblYIKv7TDJQb6eicy5uLcwNKx+uKnC+CPFwHCZ/a1SGYOJqOnnCgxdKp7mJ5n5HduAQWhaWTYVGOUZRkgDjYGNeVY3BD5h/IVqPydTmbnqr62c43Dl1/2EWTHVbk7GslCJcqUNJ5yt5DDBSGlokeocfcOc7JywKwe1Mgxt2S9cWzO5hB/WFdJ4JbyWabPAXAz6U/i+/PuWYOiyTcEy2T7T+uRgEpZPnSWYQHW6fAiZN6szas8pxVBpaEowl9aflx2a51kyM/HezRJemmB8gDuGLJr0mb+z6Mhhwm+Agcx7JhrOM3RjNeoRLuswsJ+XsxoNVZ0ZDAjf0RrMGeaY4KwS+A0Wtp2FIqvBQK0rxj9yDJKT0gIyIXxdhUkO0GcZJ7dXTmhwTodJ1NSTv1PaL8xRZ6fgs3B/O53QT+hE0INtPmHiVPMX5hjbznT4E/Ybs3nBLFt3f4eFoWkZxtJ5pC/BE78Ek2z/4YEpzs9JCWYJW8iYhM3yodO47FOV2xyMcyzIU0S+Ar//PRlfvmGCCWjHxKOxRKYl/cFPU9nH3pOZ5RR4vz5u5tP809Pr5rZFIfnaBS8mwR9MsgWNDBn7tFmC0prLv1jyKTp9GXE8JLdLEgeB7z+/Mf83iKPlTcy+0/UvP80D5g6LX8IcGngiDaA+YfgPP+cMDf9Pg2z/840qYuL+CxMoHUw9wzCxV+aMROtvjIrnPCtgIqAu6wOGoWtbam+mCEPIhG3jF8wKeB7pAYYfshYUr0hB0L8EIlZPGH9qDCY83CEp1/78oEvz8LbmMMEN+GQPMAtYwrV/0TWv8C14wMTQB7vDqDOsyl941YRhKH7AQJdMZxg63Uj+py7BSHOikVUBQ6FLpjvMGJg5XkikuWwKRzjyfHD6UmeYu85tmIseDD76OQzc6d0ZRuveFd1p0RReZ+RF4HyRzgpATxI9BzaOcpgV+BnDMB7SGppwlcNcwP5I0zB6sQWyzGFUWT92YQKt8404eojC831Nw2j8zsXfTSmi8OOqcRi9NBZGkQ+PrRiHCbQS82Y+in/chdFLL/iJkUbUyzgMXepEfmYJ0sjhMQ7jRTqLJjwjsJlpA0aVlFh/vSXSiHuZhwl03AHiijRiGT3CBA9pPUL7Gw19xo8IembuD4bGq/tiMjpuFuOs5U65D7e1cpgbWsNNhn5g4umJh0JgIQTB6Vx5XqN3DQ3A1kjD/98HDM3WuLQOsNiOVSc2uElf+M7Q3igMvVev5HE2V3weftjKYfZoB/90DzBJ/fj48hNLYHSSPzRQ+oAJbg2qlinKmMSw+IQNGJo12k6yZKkCZrCLb51hJI6gp9e7O8zO6JqRmfRCqp/LUSwAzN4gTCSx0EOpOz3YaMDsTe4zVGahC6k/HRoHKyTfZ0xaALLjCR71ArM2apvJjhtyGH8ON87wzaTVLHXR9wOTW81z+DhaGBl4iCJ/vSsaGzxpDgwzNuoDGBYmPBv1zgwLM0uM+s2+gNFYBT+xUY/msDAzH1F4kNptGJaj0LW5KMCgMHhNjcZnBoUp4jMmI2eDwoRLszHNQWFmRUwz/p+sGR4XeQDgE43TMGwbPDI0oBrAaRjxyNCAR3SchiHLInfGS/4fMMkz3wzqNXQZhu2e+WZgd47LMI+LwWZzNIeD+c3RNJk9OxjMb/asFwG90w7D8PQ3r9lfwJ5wGIY83IjPuwCw9CF3YRj+uwvgRbAbZw7DlG5pAO/PuAtTvj8DvNnkLAxjpZtNwHnmLMxvzZbXbcAJxAhwFgZPaAnGUxUCch8GvS6P/92gBawaV2F45Qatt/mXYSp3m71IUQnMdZi/iyx/9QAAMWpHYfjp99N/MNk/C4OzGgxtd9K4CcPexQHf1U3ao05uwpSKUL5haGvNRSdhOH6/VKki0LItUuMkzKxUbaUE01p5xkUYtis9Wi4Jdm4ZGhdhPkqulmH8lriTgzB4XX7yo4zeSn2V3j0YJj6KAn7WBFTnRLsHIzbSmoBFXSCVenYOhleuF1fqaM5Vq8Y1GCYqyZ2VCqfKnEjXYGrlY6uFdFVHTtdgdtVaa1UYqrjtbSHfTAWDR9XXqdVrVtz2JmPJnwSnNUpsWTmMJ4eprv4mGO8iXTViGkgkLpVrxaNI9rGF5KvzyS97ZCrdLPCl9uoNBdubUtxfND8S+Shwimeyj0lfjOk/gm/1N2+ACYZtMNuP8KZy6019ATIXauOphZGs4cUbOzZcHWvVVBfS2F6vEcZX1222L6JZ/TV3OYldam9WFyFp3CTpP7PSq5JgVjhaNb+1rM0RsOCpFWkqgKuEoS73bJJZVdJuWv7C0YmG5fWeFH3O3CxHieWdwVQd6GJL9fGVIm+BoYbJaZzTAkLFou7a6Nx2I9tgIDBelDrT57QQouzZ2NrpNHJppom2vq1tPWjjk7X+BVUhyvUCgXGl0zGEBdC3OTi6cLxhBNCFGtBR27/ar5nNuLTvpB6M511s29Ac1b0X38J4Z7utdXEqs5O/gbGronF7Y3AtGC9eYEuDg/GivWW7Hoznn7dWBkdsz+CClWCYfKqNzOtoRkYa9So1YLzgYro9I8YXncJPOjCFV92oOUB2WmVENWEK/6CpLq2ME9Dm0gHGi9fcBA7D8kZk/cEUOyga2r5hHAH3ya4wuSJIhw0UcJ5qLfwuMLkimKdiMBwu0rnewu8G49FougsHaXDEwt00glR17w+mwBnvw94tHE52y29ROsAU5fDO635xMNmOWwrrDQVT9L5Y3UhfNg4j4XrVXvNwMJhC4gvD3RcP44JdtfeVqvwHGye9YI9plUoAAAAASUVORK5CYII=" alt=""></a><br> 
+          <a href="https://leetcode.com/durgesh_mandge" class="link">LeetCode Profile <img class="icon" src="data:image/png;base64,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" alt=""></a> <br>
+          <a href="https://www.codechef.com/users/durgesh_mandge" class="link">CodeChef Profile <img class="icon" src="data:image/jpeg;base64,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" alt=""></a>
+        </div>
+      </ion-col>
+      <ion-col>
+        <img class="center profile" alt="Silhouette of a person's head" src="https://durgeshmandge.github.io/MyProfies/images/Durgesh.jpg" height="120px"/>
+      </ion-col>
+    </ion-row>
+    </ion-toolbar>
 </ion-header>
 
+
 <ion-content [fullscreen]="true" class="ion-padding">
-  <ion-avatar>
-    <img alt="Silhouette of a person's head" src="https://durgeshmandge.github.io/MyProfies/images/Durgesh.jpg"/>
-  </ion-avatar>
-  <h1>Qualifications</h1>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Master's In Computer Application</ion-card-title>
-      <ion-card-subtitle>2023-25</ion-card-subtitle>
-    </ion-card-header>
   
-    <ion-card-content>
-      Master's In Computer Application
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Bachelor's In Computer Science</ion-card-title>
-      <ion-card-subtitle>2020-23</ion-card-subtitle>
-    </ion-card-header>
+  <ion-grid>
+    <ion-row>
+        <ion-col>
+          <h1 class="center">Qualifications</h1>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Master's In Computer Application</ion-card-title>
+              <ion-card-subtitle>2023-25</ion-card-subtitle>
+            </ion-card-header>
+          
+            <ion-card-content>
+              Master's In Computer Application
+            </ion-card-content>
+          </ion-card>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Bachelor's In Computer Science</ion-card-title>
+              <ion-card-subtitle>2020-23</ion-card-subtitle>
+            </ion-card-header>
+          
+            <ion-card-content>
+              Here's a small text description for the card content. Nothing more, nothing less.
+            </ion-card-content>
+          </ion-card>
+          
+          <h1 class="center mar">Achievements</h1>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Runner up in SmartDings Hackathon</ion-card-title>
+              <ion-card-subtitle>IoT</ion-card-subtitle>
+            </ion-card-header>
+            
+            <ion-card-content>
+              SmartDings workshop 2023
+            </ion-card-content>
+          </ion-card>
+          
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Bronze winner at Intercollegiate Science Competition</ion-card-title>
+              <ion-card-subtitle>2020-23</ion-card-subtitle>
+            </ion-card-header>
+            
+            <ion-card-content>
+            Here's a small text description for the card content. Nothing more, nothing less.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    <ion-checkbox>All above information is as per best of my knowledge.</ion-checkbox>
+  </ion-content>
   
-    <ion-card-content>
-      Here's a small text description for the card content. Nothing more, nothing less.
-    </ion-card-content>
-  </ion-card>
-  <ion-checkbox>All above information is as per best of my knowledge.</ion-checkbox>
-</ion-content>
