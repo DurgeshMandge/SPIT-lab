@@ -2,9 +2,7 @@
 
 .upcoming-events {
     --ion-background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative; /* Make sure the container is positioned relatively */
     height: 100vh;
   }
   
@@ -18,7 +16,9 @@
     background-size: cover;
     background-position: center;
     opacity: 0.8;
+    background-attachment: fixed; /* Add fixed background attachment */
   }
+  
   
   .grid-container {
     display: grid;
