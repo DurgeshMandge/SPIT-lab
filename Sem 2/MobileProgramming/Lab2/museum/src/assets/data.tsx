@@ -65,31 +65,31 @@ export const museumData: Data[] = [
     {
         key: "12237",
         name:"Marcus Aurelius Emperor",
-        img:"https://art.thewalters.org/images/art/PL1_23.215_Fnt_TR_T97.jpg",
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo-Q1x9AN9BQOfl-kg4tA08AncDB7fMFbJQrLsenlB-8Qz1dqptx7eOz8LRj51pLYvoqo&usqp=CAU",
         desc:"Of everyday objects excavated from a pre-industrial city context shoes and leather are some of the most frequent."
     },
     {
         key: "12238",
-        name:"Boot from Tonsberg",
-        img:"https://www.khm.uio.no/english/collections/objects/images/a-boot-from-tonsberg-fig1-740.jpg?vrtx=thumbnail",
+        name:"Toledo Museum Art",
+        img:"https://az333959.vo.msecnd.net/images-6/comtesse-de-ceres-former-title-from-1963-to-1992-lady-folding-a-letter-louise-elisabeth-vigee-le-brun-1784-2a7f14fe.jpg",
         desc:"Of everyday objects excavated from a pre-industrial city context shoes and leather are some of the most frequent."
     },
     {
         key: "12239",
-        name:"Boot from Tonsberg",
-        img:"https://www.khm.uio.no/english/collections/objects/images/a-boot-from-tonsberg-fig1-740.jpg?vrtx=thumbnail",
+        name:"Kaat's and bear pole",
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9HjdEU1qyZeYR4hvd689AK0gZX3tqaXw79GRFfw_xmqZOvtHDwNMQAoxRZBtNKLfVGP0&usqp=CAU",
         desc:"Of everyday objects excavated from a pre-industrial city context shoes and leather are some of the most frequent."
     },
     {
         key: "12240",
-        name:"Boot from Tonsberg",
-        img:"https://www.khm.uio.no/english/collections/objects/images/a-boot-from-tonsberg-fig1-740.jpg?vrtx=thumbnail",
+        name:"Mummy Portait",
+        img:"https://www.penn.museum/collections/assets/138047_800.jpg",
         desc:"Of everyday objects excavated from a pre-industrial city context shoes and leather are some of the most frequent."
     },
     {
         key: "12241",
-        name:"Boot from Tonsberg",
-        img:"https://www.khm.uio.no/english/collections/objects/images/a-boot-from-tonsberg-fig1-740.jpg?vrtx=thumbnail",
+        name:"Livia tha Porto",
+        img:"https://art.thewalters.org/images/art/PS1_37.541_Fnt_DD_TO8.jpg",
         desc:"Of everyday objects excavated from a pre-industrial city context shoes and leather are some of the most frequent."
     }
 ];
