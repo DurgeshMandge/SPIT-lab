@@ -1,0 +1,7 @@
+{
+  "name": "SPIT-website",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
