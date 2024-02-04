@@ -1,9 +1,11 @@
 /* FeedBackForm.scss */
 
-.black {
+.ion-padding {
     background-image: url('https://images.adsttc.com/media/images/60a1/2bf9/f043/cc2d/9818/162b/newsletter/screen-shot-2021-05-16-at-7-pm.jpg?1621175299'); /* Specify the path to your background image */
     background-size: cover; /* Cover the entire container */
     background-position: center; /* Center the background image */
+    // background-color: #1e1e1e; /* Dark background color */
+    color: #fff; /* White text color */
   }
   
   ion-card {
@@ -14,7 +16,7 @@
   }
   
   ion-card-title {
-    color: #333;
+    color: #0e0101;
   }
   
   ion-item {

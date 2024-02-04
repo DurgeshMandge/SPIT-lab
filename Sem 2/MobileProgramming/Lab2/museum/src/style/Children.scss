@@ -4,6 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #1e1e1e; /* Dark background color */
+    color: #fff; /* White text color */
   }
   
   .container {
@@ -40,5 +42,43 @@
 
   .concept{
     margin-bottom: 20;
+  }
+  .button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #ff8a00, #e52e71, #00bfff, #228b22);
+    background-size: 400% 400%;
+    animation: rainbow 8s linear infinite;
+    transition: transform 0.3s ease;
+  }
+
+  .button:hover {
+    transform: scale(1.1);
+  }
+
+  @keyframes rainbow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .para {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
   }
   

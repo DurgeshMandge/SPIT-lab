@@ -1,6 +1,6 @@
 import React from 'react';
 import { IonContent, IonCard, IonCardHeader, IonCardTitle, IonCardContent } from '@ionic/react';
-import './UpcomingEvents.scss';
+import '../style/UpcomingEvents.scss';
 
 const UpcomingEvents: React.FC = () => {
   return (

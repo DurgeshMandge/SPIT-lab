@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Data, museumData } from '../assets/data';
 import { IonContent, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonSearchbar, IonButton } from '@ionic/react';
-import './Home.scss';
+import '../style/Home.scss';
 
 const Home: React.FC = () => {
 

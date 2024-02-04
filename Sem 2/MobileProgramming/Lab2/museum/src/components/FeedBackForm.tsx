@@ -1,23 +1,16 @@
 import React, { useState } from 'react';
-import { IonContent, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonItem, IonLabel, IonInput, IonTextarea, IonButton, IonRadioGroup, IonRadio, IonItemDivider } from '@ionic/react';
-import './FeedBackForm.scss';
+import { IonContent, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonItem, IonLabel, IonInput, IonTextarea, IonButton, IonRadioGroup, IonRadio, IonItemDivider, IonAlert } from '@ionic/react';
+import '../style/FeedBackForm.scss'
 
 const FeedbackForm: React.FC = () => {
   const [rating, setRating] = useState<number | undefined>(undefined);
   const [recommendation, setRecommendation] = useState<string | undefined>(undefined);
   const [name, setName] = useState<string | undefined>(undefined);
+  const [showAlert, setShowAlert] = useState<boolean>(false);
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if(recommendation === "yes"){
-        alert("Thank you " +  name + " for recommending us and giving good points rating");
-    }else{
-        alert("Thank you " + name + " for feedback we will definately improve");
-    }
-    console.log('Form submitted!');
-    console.log('Rating:', rating);
-    console.log('Recommendation:', recommendation);
-    console.log('name:', name);
+    setShowAlert(true);
   };
 
   return (
@@ -68,6 +61,13 @@ const FeedbackForm: React.FC = () => {
             </IonItem>
             <IonButton expand="block" type="submit">Submit</IonButton>
           </form>
+          <IonAlert
+        isOpen={showAlert}
+        onDidDismiss={() => setShowAlert(false)}
+        header={'Thank you!'}
+        message={`Thank you ${name ? name : ''} for your feedback! We will definatedly improve`}
+        buttons={['OK']}
+      />
         </IonCardContent>
       </IonCard>
     </IonContent>
