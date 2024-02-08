@@ -28,8 +28,8 @@ public class FractionalKnapsack {
         int available = W, max =0;
         for(int i=0;i<10;i++){
             if(available>0 && available>=wt[i]){
-                max+= m.get(m1.get(valPerWt[i]));
-                available-= m1.get(valPerWt[i]);
+                max+= valPerWt[i] * m1.get(valPerWt[i]);
+                available-= valPerWt[i] * m1.get(valPerWt[i]);
             }else if(available>0 && available<wt[i]){
                 int ratio = valPerWt[i]*available;
                 max+=ratio;

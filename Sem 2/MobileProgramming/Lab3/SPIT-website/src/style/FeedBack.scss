@@ -1,0 +1,26 @@
+// FeedbackForm.scss
+
+.feedback-form{
+    margin: 5%;
+}
+
+form {
+    ion-item {
+      --padding-start: 0; // Remove default padding
+      --padding-end: 0; // Remove default padding
+  
+      ion-label {
+        font-weight: bold;
+      }
+  
+      ion-input,
+      ion-textarea {
+        margin-top: 8px;
+      }
+    }
+  
+    ion-button {
+      margin-top: 16px;
+    }
+  }
+  

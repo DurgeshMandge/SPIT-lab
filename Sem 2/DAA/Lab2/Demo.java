@@ -9,10 +9,10 @@ public class Demo {
         int[] val = new int[10];
         int[] wt = new int[10];
         for(int i=0;i<10;i++){
-            val[i]= 35+(36)*i;
+            val[i]= 32+(33)*i;
         }
         for(int i=0;i<10;i++){
-            wt[i]= ((35+i)%10) + 1;
+            wt[i]= ((32+i)%10) + 1;
         }
         System.out.println(Arrays.toString(val));
         System.out.println(Arrays.toString(wt));

@@ -1,0 +1,44 @@
+/* Define styles for the faculty display */
+ion-header {
+    ion-toolbar {
+      --background: #1976D2; /* Change the header background color */
+      --ion-color-base: #fff; /* Change the text color */
+    }
+  }
+  
+  ion-list {
+    ion-item {
+      --padding-start: 20px;
+      --inner-padding-end: 20px;
+      --highlight-height: 0; /* Disable the default highlight effect */
+      --inner-border-width: 0; /* Remove inner border */
+      --border-width: 0; /* Remove border */
+      --inner-box-shadow: none; /* Remove inner box shadow */
+  
+      &:hover {
+        --background: #f2f2f2; /* Change background color on hover */
+      }
+  
+      ion-avatar {
+        width: 100px;
+        height: 100px;
+      }
+  
+      ion-label {
+        width: calc(100% - 120px); /* Adjust label width to accommodate avatar */
+      }
+    }
+  
+    ion-label h2 {
+      margin-bottom: 5px;
+      font-size: 18px;
+      font-weight: bold; /* Make the faculty name bold */
+    }
+  
+    ion-label p {
+      margin: 0;
+      font-size: 14px;
+      color: #888;
+    }
+  }
+  
