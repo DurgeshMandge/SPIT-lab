@@ -12,7 +12,7 @@ interface AccordionProps {
   department: string;
 }
 
-const AccordionWithImage: React.FC<AccordionProps> = ({ title, content, imageSrc, position, department }) => {
+const AccordionWithImage: React.FC<AccordionProps> = ({ title, content, imageSrc, position, department, web }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleAccordion = () => {
@@ -28,13 +28,16 @@ const AccordionWithImage: React.FC<AccordionProps> = ({ title, content, imageSrc
             <p><strong>Position:</strong> {position}</p>
             <p><strong>Department:</strong> {department}</p>
           </div>
-          <IonImg className='circular-image' src={imageSrc} />
+          <img className='circular-image' src={imageSrc} />
         </div>
       </IonCardHeader>
       {isExpanded && (
-        <IonCardContent>
-          <div className="accordion-content centre"><strong>{content}</strong></div>
-        </IonCardContent>
+        <>
+          <IonCardContent>
+            <div className="accordion-content centre"><strong>{content}</strong></div>
+            <a className='h2Style' href={web} target="_blank" rel="noopener noreferrer">Visit Profile</a>
+          </IonCardContent>
+        </>
       )}
     </IonCard>
   );
