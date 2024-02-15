@@ -1,5 +1,5 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import ExploreContainer from '../components/Home';
 import './Tab2.css';
 import Faculty from '../components/FacultyDisplay';
 import FacultyDisplay from '../components/FacultyDisplay';

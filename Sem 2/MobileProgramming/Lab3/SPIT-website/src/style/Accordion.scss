@@ -1,0 +1,50 @@
+// AccordionWithImage.scss
+
+.accordion-card {
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    cursor: pointer;
+  
+    .accordion-icon {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 8px;
+    }
+  
+    .accordion-content {
+      padding: 8px;
+    }
+  
+    // &.expanded {
+    //   .accordion-icon {
+    //     transform: rotate(180deg);
+    //   }
+    // }
+    
+    .accordion-image {
+      // max-width: 100px;
+      // float: left;
+      // margin-right: 10px;
+      // border-radius: 4px;
+      
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+    }
+    
+    .centre {
+        flex-grow: 1;
+        text-align: center;
+      }
+    .circular-image {
+        border-radius: 50%; /* Makes the image circular */
+    width: 100x; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    object-fit: cover; /* Ensures the image fills the circular container */
+    margin-right: 10px; /* Adjust the margin as needed */
+    }
+  }
+  

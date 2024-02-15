@@ -1,8 +1,7 @@
 // FeedbackForm.tsx
-
+import "../style/FeedBack.scss"
 import React, { useState } from 'react';
 import { IonItem, IonLabel, IonInput, IonTextarea, IonButton, IonAlert } from '@ionic/react';
-import '../style/FeedBack.scss'
 
 const FeedbackForm: React.FC = () => {
   const [name, setName] = useState<string>('');
@@ -19,12 +18,6 @@ const FeedbackForm: React.FC = () => {
       alert("Please enter a valid email address.");
       return;
     }
-
-    // You can implement your logic to handle the form submission here
-    console.log('Name:', name);
-    console.log('Email:', email);
-    console.log('Feedback:', feedback);
-    console.log('Suggestion:', suggestion);
     // Reset the form fields after submission
     setName('');
     setEmail('');
@@ -57,7 +50,7 @@ const FeedbackForm: React.FC = () => {
   };
 
   return (
-    <div className="feedback-form">
+    <div className="feedback-form" style={{ backgroundImage: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" }}>
       <form onSubmit={handleFormSubmit}>
         <IonItem>
           <IonLabel position="floating">Name</IonLabel>
