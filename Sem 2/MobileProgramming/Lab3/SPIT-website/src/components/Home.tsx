@@ -1,6 +1,6 @@
   import '../style/Home.scss';
   import React from 'react';
-  import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/react';
+  import { IonContent, IonFooter, IonHeader, IonTitle, IonToolbar } from '@ionic/react';
   import HorizontallyScrollableComponent from '../utilites/Scroller';
 
   function Home() {
@@ -39,20 +39,42 @@
               src="https://www.campusoption.com/images/colleges/gallery/24_11_17_110206_College.jpg"
             />
             <h4 className='h2Style'>Main Building</h4>
+            
 
-            <img
-              alt="College Campus"
-              src="https://images.shiksha.com/mediadata/images/1551435170phptmId73.png"
-            />
-            <h4 className='h2Style'>Class Room</h4>
+            {/* ---------------- Horizontally Scrollabe------------- */}
 
-            <img
-              alt="College Campus"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoIFnbLbCcz-Hsd5RTKpeb6MpmMKxeQ3FFRyhrdy5I73Uu8s_6X0_etVY88iWB8aD3hC8&usqp=CAU"
-            />
-            <h4 className='h2Style'>Conference</h4>
-
+            <div className="horizontally-scrollable">
+              <div className="scroll-container">
+                <div className='inline'>
+                  <img
+                    className='scrolImg block'
+                    alt="College Campus"
+                    src="https://images.shiksha.com/mediadata/images/1551435170phptmId73.png"
+                  />
+                  <h2 className='h2Style'>Class Rooms</h2>
+                </div>
+                <div className='inline'>
+                  <img
+                    className='scrolImg block'
+                    alt="College Campus"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoIFnbLbCcz-Hsd5RTKpeb6MpmMKxeQ3FFRyhrdy5I73Uu8s_6X0_etVY88iWB8aD3hC8&usqp=CAU"
+                  />
+                  <h2 className='h2Style'>Conference</h2>
+                </div>
+                <div className='inline'>
+                  <img
+                    className='scrolImg block'
+                    alt="College Campus"
+                    src="https://mca.spit.ac.in/wp-content/uploads/2022/12/20221212_115651-min-1536x1152.jpg"
+                  />
+                  <h2 className='h2Style'>Computer Labs</h2>
+                </div>
+              </div>
+            </div>
           </div>
+
+          {/* ------------------------ End Horizontally Scrollable----------------------- */}
+          
         </IonContent>
       </>
     );

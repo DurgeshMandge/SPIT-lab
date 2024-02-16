@@ -37,9 +37,33 @@
     }
   }
   
-.accordion-cardexpanded{
-  .h2Style{
-    text-align: center;
-    color: blue;
+  :root {
+    --blue-color: #007bff; /* You can adjust the shade of blue as needed */
   }
+
+  /* Style the anchor tag to look like a button */
+  .aStyle {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: var(--blue-color); /* Use the blue color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove default underline */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add some rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+  }
+
+  /* Hover effect */
+  .aStyle:hover {
+    background-color: #0056b3; /* Darken the color slightly on hover */
+  }
+
+  // .aStyle{
+  //   text-decoration: none;
+  //   text-align: center;
+  //   color: blue;
+  // }
+.centre{
+  margin:12px 10px 10px 10px;
+  text-align: center;
 }

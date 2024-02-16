@@ -62,3 +62,62 @@
   align-items: center; /* Vertical alignment */
   justify-content: center; /* Horizontal alignment */
 }
+
+// HorizontallyScrollableComponent.scss
+
+.scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hides scrollbar in Internet Explorer */
+  &::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Chrome, Safari, and Opera */
+  }
+}
+
+.items {
+  display: inline-flex;
+  align-items: center;
+}
+
+.item {
+  padding: 10px;
+}
+
+.item ion-img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.text1,
+.text2 {
+  font-size: 14px;
+  margin-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.scrolImg{
+  height: 400px;
+  padding: 10px;
+  margin:10px;
+}
+
+.h2Style{
+color: #2613a2; 
+text-align: center; 
+margin-bottom: 20px;
+}
+.inline{
+display: inline-block;
+}
+.block{
+display:block;
+}
+.centre{
+text-align: center;
+}

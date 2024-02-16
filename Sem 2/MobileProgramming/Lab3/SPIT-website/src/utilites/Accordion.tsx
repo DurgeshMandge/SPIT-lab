@@ -1,7 +1,7 @@
 // AccordionWithImage.tsx
 
 import React, { useState } from 'react';
-import { IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonImg } from '@ionic/react';
+import { IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonImg, IonText } from '@ionic/react';
 import '../style/Accordion.scss'
 
 interface AccordionProps {
@@ -33,9 +33,11 @@ const AccordionWithImage: React.FC<AccordionProps> = ({ title, content, imageSrc
       </IonCardHeader>
       {isExpanded && (
         <>
-          <IonCardContent>
-            <div className="accordion-content centre"><strong>{content}</strong></div>
-            <a className='h2Style' href={web} target="_blank" rel="noopener noreferrer">Visit Profile</a>
+          <IonCardContent >
+            <IonText>{content}</IonText><br />
+            <div className="centre">
+              <a className='aStyle' href={web} target="_blank" rel="noopener noreferrer">Visit Profile</a>
+            </div>
           </IonCardContent>
         </>
       )}
