@@ -26,10 +26,10 @@
               src="https://i.ytimg.com/vi/uGcEHgtnu7A/maxresdefault.jpg"
             />
 
-            {/* <div className='divStyle'>
+            <div className='divStyle'>
               <h2 className='h2Style'>Our College's Vision:</h2>
               <p className='pStyle'>At <strong>S.P.I.T</strong>, our vision is to foster a dynamic learning environment that empowers students to become global leaders, critical thinkers, and compassionate contributors to society.</p>
-            </div> */}
+            </div>
             
 
             <HorizontallyScrollableComponent/>

@@ -19,7 +19,7 @@ const AccordionWithImage: React.FC<AccordionProps> = ({ title, content, imageSrc
   const toggleAccordion = () => {
     setIsExpanded(!isExpanded);
   };
-
+  
   return (
     <IonCard className={`accordion-card ${isExpanded ? 'expanded' : ''}`}>
       <IonCardHeader onClick={toggleAccordion}>
@@ -35,7 +35,9 @@ const AccordionWithImage: React.FC<AccordionProps> = ({ title, content, imageSrc
       {isExpanded && (
         <>
           <IonCardContent >
-            <IonText >{content}</IonText><br />
+            <div className="content">
+              <IonText >{content}</IonText><br />
+            </div>
             <div className="centre">
               <a className='aStyle' href={web} target="_self" rel="noopener noreferrer">Visit Profile</a>
             </div>

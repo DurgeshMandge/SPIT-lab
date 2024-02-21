@@ -6,8 +6,23 @@ import GoalsAndVision from '../components/GoalsVision';
 const Tab3: React.FC = () => {
   return (
     <IonPage>
-      <GoalsAndVision/>
+      <IonHeader>
+        <IonToolbar>
+          <IonTitle>Goals and Vision</IonTitle>
+        </IonToolbar>
+      </IonHeader>
+      <IonContent fullscreen>
+        <IonHeader collapse="condense">
+          <IonToolbar>
+            <IonTitle size="large">Tab 2</IonTitle>
+          </IonToolbar>
+        </IonHeader>
+        <GoalsAndVision/>
+      </IonContent>
     </IonPage>
+    // <IonPage>
+    //   <GoalsAndVision/>
+    // </IonPage>
   );
 };
 

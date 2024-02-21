@@ -5,30 +5,37 @@
   padding: 50px; /* Adjust padding as needed */
 
   /* Styling for the background image */
-  background-image: url('https://leaderimpact.files.wordpress.com/2011/06/goal.jpg');
+  background-image: url('https://bernardmarr.com/wp-content/uploads/2021/07/How-Do-You-Set-The-Right-Targets-For-Your-Business-Here-Are-Some-Top-Tips.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 5px;
+  // border-radius: 5px;
   /* Add any additional background properties here */
 
   /* Set the background color to a blue theme */
-  background-color: #007bff; /* Blue color */
+  // background-color: #eef1f4; /* Blue color */
 }
 .blue{
   color: blue;
 }
+.border{
+  border-radius: 10px;
+}
 .centre {
   text-align: center;
-  color: #fff; /* Text color set to white */
+  margin: 35px;
+}
+.centre1{
+  text-align: center;
 }
 
 /* Add any other styles for the component here */
 
-h2 {
+h1 {
   font-size: 24px;
-  color: #fff; /* Text color set to white */
-  margin-bottom: 20px;
+  color: black; /* Text color set to white */
+  margin-bottom: 40px;
+  font-weight: bold;
 }
 
 .goal,
@@ -44,7 +51,7 @@ h3 {
 
 p {
   font-size: 16px;
-  color: #fff; /* Text color set to white */
+  // color: #fff; /* Text color set to white */
   line-height: 1.6;
 }
 
