@@ -1,7 +1,5 @@
-// FeedbackForm.tsx
-
 import React, { useState } from 'react';
-import { IonItem, IonLabel, IonInput, IonTextarea, IonButton, IonAlert } from '@ionic/react';
+import { IonItem, IonLabel, IonInput, IonTextarea, IonButton, IonAlert, IonRange } from '@ionic/react';
 import '../style/FeedBack.scss'
 
 const FeedbackForm: React.FC = () => {
@@ -9,6 +7,7 @@ const FeedbackForm: React.FC = () => {
   const [email, setEmail] = useState<string>('');
   const [feedback, setFeedback] = useState<string>('');
   const [suggestion, setSuggestion] = useState<string>('');
+  const [rating, setRating] = useState<number>(0);
   const [showAlert, setShowAlert] = useState<boolean>(false);
   const [formValid, setFormValid] = useState<boolean>(false);
 
@@ -25,11 +24,13 @@ const FeedbackForm: React.FC = () => {
     console.log('Email:', email);
     console.log('Feedback:', feedback);
     console.log('Suggestion:', suggestion);
+    console.log('Rating:', rating);
     // Reset the form fields after submission
     setName('');
     setEmail('');
     setFeedback('');
     setSuggestion('');
+    setRating(0);
     setShowAlert(true);
   };
 
@@ -54,6 +55,11 @@ const FeedbackForm: React.FC = () => {
     if (name === 'suggestion') setSuggestion(value);
 
     setFormValid(checkFormValidity());
+  };
+
+  // Function to handle rating change
+  const handleRatingChange = (e: any) => {
+    setRating(parseInt(e.target.value, 10));
   };
 
   return (
@@ -86,6 +92,17 @@ const FeedbackForm: React.FC = () => {
             value={feedback}
             onIonChange={handleInputChange}
             required
+          />
+        </IonItem>
+        <IonItem>
+          <IonLabel>Rating: {rating}</IonLabel>
+          <IonRange
+            min={0}
+            max={5}
+            step={1}
+            snaps={true}
+            value={rating}
+            onIonChange={handleRatingChange}
           />
         </IonItem>
         <IonItem>

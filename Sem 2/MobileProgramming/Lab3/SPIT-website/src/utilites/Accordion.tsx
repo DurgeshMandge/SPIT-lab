@@ -10,6 +10,7 @@ interface AccordionProps {
   imageSrc: string;
   position: string;
   department: string;
+  web: string;
 }
 
 const AccordionWithImage: React.FC<AccordionProps> = ({ title, content, imageSrc, position, department, web }) => {
@@ -34,9 +35,9 @@ const AccordionWithImage: React.FC<AccordionProps> = ({ title, content, imageSrc
       {isExpanded && (
         <>
           <IonCardContent >
-            <IonText>{content}</IonText><br />
+            <IonText >{content}</IonText><br />
             <div className="centre">
-              <a className='aStyle' href={web} target="_blank" rel="noopener noreferrer">Visit Profile</a>
+              <a className='aStyle' href={web} target="_self" rel="noopener noreferrer">Visit Profile</a>
             </div>
           </IonCardContent>
         </>
