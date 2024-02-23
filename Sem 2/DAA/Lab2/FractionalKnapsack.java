@@ -1,43 +1,80 @@
-import java.util.Arrays;
-import java.util.HashMap;
+import java.util.*;
 
 public class FractionalKnapsack {
-    
-    static HashMap<Integer,Integer> m1 = new HashMap<>();
-    static HashMap<Integer,Integer> m = new HashMap<>();
-    public static void main(String[] args) {
-        int[] val = {35, 71, 107, 143, 179, 215, 251, 287, 323, 359};
-        int[] wt = {6, 7, 8, 9, 10, 1, 2, 3, 4, 5};
-        int[] valPerWt = new int[10];
-        int W = 35;
-        for(int i=0;i<10;i++){
-            valPerWt[i]= val[i]/wt[i];
-            m1.put(valPerWt[i],wt[i]);
-        }
 
-        int target = knapsack(val,wt,W,valPerWt);
-        System.out.println(target);
+  
+  static class Item {
+    int weight, value;
+    double valuePerUnitWeight;
+
+    Item(int weight, int value) {
+      this.weight = weight;
+      this.value = value;
+
+      valuePerUnitWeight = (double) (value) / (weight);
     }
-    
-    private static int knapsack(int[] val, int[] wt, int W,int[] valPerWt) {
-        for(int i=0;i<10;i++){
-            m.put(wt[i],val[i]);
-        }
-        
-        Arrays.sort(valPerWt);
-        int available = W, max =0;
-        for(int i=0;i<10;i++){
-            if(available>0 && available>=wt[i]){
-                max+= valPerWt[i] * m1.get(valPerWt[i]);
-                available-= valPerWt[i] * m1.get(valPerWt[i]);
-            }else if(available>0 && available<wt[i]){
-                int ratio = valPerWt[i]*available;
-                max+=ratio;
-            }
-            else{
-                break;
-            }
-        }
-        return max;
+  }
+
+  static double getMax(int weight[], int value[], int capacity) {
+    int n = weight.length;
+
+    List<Item> list = new ArrayList<>();
+
+    for (int i = 0; i < n; i++) {
+      list.add(new Item(weight[i], value[i]));
     }
+
+    Collections.sort(
+      list,
+      new Comparator<Item>() {
+
+        public int compare(Item i1, Item i2) {
+          if (i1.valuePerUnitWeight > i2.valuePerUnitWeight) return -1;
+          return 1;
+        }
+      }
+    );
+
+    double ans = 0;
+
+    for (int i = 0; i < n; i++) {
+      int wt = list.get(i).weight;
+      int val = list.get(i).value;
+      double valuePerUnitWeight = list.get(i).valuePerUnitWeight;
+      // If we can take the whole item.
+      if (capacity >= wt) {
+        // Adding value of current item.
+        ans += val;
+
+        // Reducing capacity by wt.
+        capacity -= wt;
+      }
+      // Otherwise we can take a fraction.
+      else {
+        // Adding the value of the part that we can take.
+        ans += valuePerUnitWeight * capacity;
+
+        // Now we are left with no space so
+        // we will terminate the loop.
+        capacity = 0;
+        break;
+      }
+    }
+    // Returning the answer
+    return ans;
+  }
+
+  public static void main(String args[]) {
+    // Defining the weights and values
+    // of the item.
+    int weight[] = {3, 4, 5, 6, 7, 8, 9, 10, 1, 2 };
+    int value[] = {32, 65, 98, 131, 164, 197, 230, 263, 296, 329 };
+    int capacity = 60;
+
+    System.out.println(
+      "Maximum value that" +
+      " can be obtained is " +
+      getMax(weight, value, capacity)
+    );
+  }
 }
