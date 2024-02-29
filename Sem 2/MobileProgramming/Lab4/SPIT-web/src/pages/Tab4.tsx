@@ -1,25 +1,26 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Tab2.css';
+import './Tab3.css';
+import UpcomingEvent from '../components/UpcomingEvent';
 
-const Tab2: React.FC = () => {
+
+const Tab4: React.FC = () => {
   return (
-    <IonPage>
+    <IonPage className='tab'>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 4</IonTitle>
+          <IonTitle>Upcoming Events</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Tab 4</IonTitle>
+            <IonTitle size="large">Upcomming Events</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 4 page" />
+        <UpcomingEvent></UpcomingEvent>
       </IonContent>
     </IonPage>
   );
 };
 
-export default Tab2;
+export default Tab4;

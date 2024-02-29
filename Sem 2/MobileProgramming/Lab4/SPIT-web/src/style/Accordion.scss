@@ -1,0 +1,70 @@
+// AccordionWithImage.scss
+
+.accordion-card {
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    cursor: pointer;
+  
+    .accordion-icon {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 8px;
+    }
+  
+    .accordion-content {
+      padding: 8px;
+    }
+    
+    .accordion-image {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    
+    .centre {
+        flex-grow: 1;
+        text-align: center;
+      }
+    .circular-image {
+        border-radius: 50%; /* Makes the image circular */
+        width: 100x; /* Adjust the size as needed */
+        height: 100px; /* Adjust the size as needed */
+        object-fit: cover; /* Ensures the image fills the circular container */
+        margin-right: 10px; /* Adjust the margin as needed */
+    }
+  }
+  
+  :root {
+    --blue-color: #007bff; /* You can adjust the shade of blue as needed */
+  }
+
+  /* Style the anchor tag to look like a button */
+  .aStyle {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: var(--blue-color); /* Use the blue color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove default underline */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add some rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+  }
+
+  /* Hover effect */
+  .aStyle:hover {
+    background-color: #0056b3; /* Darken the color slightly on hover */
+  }
+
+  // .aStyle{
+  //   text-decoration: none;
+  //   text-align: center;
+  //   color: blue;
+  // }
+.centre{
+  text-align: center;
+  align-items: center;
+  margin:12px 10px 10px 10px;
+}

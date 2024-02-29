@@ -1,0 +1,35 @@
+// Accordion.scss
+.blue-theme {
+    ion-item {
+      --background: #007bff; /* Blue color */
+      --border-radius: 15px; /* Soft corners */
+    }
+  
+    ion-item-header {
+      --background: #0056b3; /* Darker shade of blue for header */
+    }
+  
+    .accordion-item {
+      border-radius: 15px; /* Soft corners */
+      overflow: hidden;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+      margin-bottom: 10px;
+    }
+  }
+  /* GoalsAccordion component styles */
+
+ion-accordion {
+    border-radius: 10px; /* Soft corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  
+    // You can adjust padding, margin, and other styles as needed
+  }
+.padding{
+    padding: 8px;
+    margin:5px;
+}
+.ion-padding{
+    line-height: 28px;
+}
+  /* Add any additional styles for the component here */
+  

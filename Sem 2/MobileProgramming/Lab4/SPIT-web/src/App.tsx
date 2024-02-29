@@ -10,7 +10,7 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle } from 'ionicons/icons';
+import { addCircle, calendar, calendarNumber, disc, ellipse, home, locate, paperPlane, people, square, triangle } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
@@ -33,8 +33,8 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import Tab4 from './pages/Tab4';
 import Tab5 from './pages/Tab5';
+import Tab4 from './pages/Tab4';
 
 setupIonicReact();
 
@@ -64,24 +64,24 @@ const App: React.FC = () => (
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="tab1" href="/tab1">
-            <IonIcon aria-hidden="true" icon={triangle} />
+            <IonIcon aria-hidden="true" icon={home} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
-            <IonIcon aria-hidden="true" icon={ellipse} />
-            <IonLabel>Admissions</IonLabel>
+            <IonIcon aria-hidden="true" icon={people} />
+            <IonLabel>Faculties</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon aria-hidden="true" icon={square} />
-            <IonLabel>Placements</IonLabel>
+            <IonIcon aria-hidden="true" icon={disc} />
+            <IonLabel>Goals and Vision</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="ta43" href="/tab4">
-            <IonIcon aria-hidden="true" icon={square} />
-            <IonLabel>Results</IonLabel>
+          <IonTabButton tab="tab4" href="/tab4">
+            <IonIcon aria-hidden="true" icon={calendar} />
+            <IonLabel>Upcoming Events</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab5" href="/tab5">
-            <IonIcon aria-hidden="true" icon={square} />
-            <IonLabel>Enquiry</IonLabel>
+            <IonIcon aria-hidden="true" icon={paperPlane} />
+            <IonLabel>FeedBack Form</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>

@@ -1,0 +1,96 @@
+// // FeedbackForm.scss
+
+// .feedback-form{
+//     margin: 5%;
+// }
+
+// form {
+//     ion-item {
+//       --padding-start: 0; // Remove default padding
+//       --padding-end: 0; // Remove default padding
+  
+//       ion-label {
+//         font-weight: bold;
+//       }
+  
+//       ion-input,
+//       ion-textarea {
+//         margin-top: 8px;
+//       }
+//     }
+  
+//     ion-button {
+//       margin-top: 16px;
+//     }
+//   }
+  // FeedbackForm.scss
+
+// .feedback-form {
+//   background-image: url('https://www.shutterstock.com/image-photo/satisfaction-evaluation-form-concept-customer-260nw-2281311185.jpg');
+//   background-size: cover;
+//   background-position: center;
+//   padding: 20px;
+//   border-radius: 10px;
+// }
+
+// .feedback-form form {
+//   background-color: rgba(255, 255, 255, 0.8); /* Background color with transparency */
+//   padding: 20px;
+//   border-radius: 10px;
+// }
+
+// .feedback-form form ion-item {
+//   --ion-background-color: transparent; /* Transparent background for ion-item */
+//   --ion-color-base: black; /* Text color for ion-item */
+// }
+
+// .feedback-form form ion-item ion-label {
+//   color: black; /* Text color for ion-label */
+// }
+
+// .feedback-form form ion-button {
+//   margin-top: 20px;
+// }
+
+// .feedback-form form ion-alert-content {
+//   color: black; /* Text color for ion-alert */
+// }
+// FeedbackForm.scss
+
+body, html {
+  height: 100vh;
+  margin: 0;
+}
+
+.feedback-form {
+  background-image: url('https://media.istockphoto.com/id/1141639313/photo/contact-us-woman-hand-holding-icon-customer-support-concept-copy-space.jpg?s=612x612&w=0&k=20&c=HK-XWrrf6kuezCVb_hvSE1fWu-vpsqoCDb30En5H8y8=');
+  background-size: cover;
+  background-position: center;
+  height: 100%; /* Ensures the background image covers the full screen */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.feedback-form form {
+  background-color: rgba(255, 255, 255, 0.8); /* Background color with transparency */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.feedback-form form ion-item {
+  --ion-background-color: transparent; /* Transparent background for ion-item */
+  --ion-color-base: black; /* Text color for ion-item */
+}
+
+.feedback-form form ion-item ion-label {
+  color: black; /* Text color for ion-label */
+}
+
+.feedback-form form ion-button {
+  margin-top: 20px;
+}
+
+.feedback-form form ion-alert-content {
+  color: black; /* Text color for ion-alert */
+}
+

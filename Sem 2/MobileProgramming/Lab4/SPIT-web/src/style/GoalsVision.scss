@@ -1,0 +1,60 @@
+/* Modify the CSS for the GoalsAndVision component to give it a blue-themed background */
+.goals-vision {
+  width: 100%;
+  height: 100%;
+  padding: 50px; /* Adjust padding as needed */
+
+  /* Styling for the background image */
+  background-image: url('https://bernardmarr.com/wp-content/uploads/2021/07/How-Do-You-Set-The-Right-Targets-For-Your-Business-Here-Are-Some-Top-Tips.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  // border-radius: 5px;
+  /* Add any additional background properties here */
+
+  /* Set the background color to a blue theme */
+  // background-color: #eef1f4; /* Blue color */
+}
+.blue{
+  color: blue;
+}
+.border{
+  border-radius: 10px;
+}
+.centre {
+  text-align: center;
+  margin: 35px;
+}
+.centre1{
+  text-align: center;
+}
+
+/* Add any other styles for the component here */
+
+h1 {
+  font-size: 24px;
+  color: black; /* Text color set to white */
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.goal,
+.vision {
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #fff; /* Text color set to white */
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  // color: #fff; /* Text color set to white */
+  line-height: 1.6;
+}
+
+.centre {
+  text-align: center;
+}

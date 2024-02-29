@@ -1,0 +1,123 @@
+.page-home {
+    .background-image {
+      background-image: url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      .content-container {
+        // text-align: center;
+  
+        h1 {
+          font-size: 3rem;
+          font-weight: bold;
+          color: #8e0000;
+        }
+  
+        p {
+          font-size: 1.5rem;
+          color: #680303;
+        }
+      }
+    }
+  }
+  // HeaderWithFields.scss
+
+.header-toolbar {
+  --background: #840710; // Background color of the toolbar
+  --color: #ffffff; // Text color of the title and buttons
+
+  ion-title {
+    font-size: 1.5rem; // Font size of the title
+    font-weight: bold; // Font weight of the title
+  }
+
+  ion-button {
+    --color: #ffffff; // Color of the button icon
+  }
+}
+
+.divStyle{
+  font-family: Arial, 
+  sans-serif; color: #333; 
+  max-width: 600px; 
+  margin: 0 auto;
+}
+.h2Style{
+  color: #2613a2; 
+  text-align: center; 
+  margin-bottom: 20px;
+}
+.pStyle{
+  line-height: 1.6;
+}
+.Title{
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  justify-content: center; /* Horizontal alignment */
+}
+
+// HorizontallyScrollableComponent.scss
+
+.scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hides scrollbar in Internet Explorer */
+  &::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Chrome, Safari, and Opera */
+  }
+}
+
+.items {
+  display: inline-flex;
+  align-items: center;
+}
+
+.item {
+  padding: 10px;
+}
+
+.item ion-img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.text1,
+.text2 {
+  font-size: 14px;
+  margin-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.scrolImg{
+  height: 400px;
+  padding: 10px;
+  margin:10px;
+}
+
+.h2Style{
+color: #2613a2; 
+text-align: center; 
+margin-bottom: 20px;
+}
+.inline{
+display: inline-block;
+}
+.block{
+display:block;
+}
+.centre{
+text-align: center;
+}
