@@ -1,0 +1,32 @@
+.login-container {
+    height: 100%;
+    background-image: url('https://wallpaperaccess.com/full/1209535.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ion-content {
+    --background: transparent;
+  }
+  
+  /* Custom styles for input and button container */
+.input-container {
+    background-color: rgba(172, 171, 238, 0.7); /* Adjust opacity as needed */
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px; /* Add margin between input fields */
+  }
+
+  ion-input,
+    ion-button {
+    --background: rgb(58, 11, 129); /* Adjust the alpha value (last parameter) to change opacity */
+    border-radius: 10px;
+    --padding-start: 10px;
+    --padding-end: 10px;
+    }
+  .margin-top{
+    margin-top: 250px;
+  }

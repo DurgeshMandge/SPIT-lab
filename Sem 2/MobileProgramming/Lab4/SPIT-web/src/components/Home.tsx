@@ -3,6 +3,7 @@ import React from 'react';
 import { IonContent, IonFooter, IonHeader, IonTitle, IonToolbar, IonMenu, IonMenuToggle, IonList, IonItem, IonIcon, IonLabel } from '@ionic/react';
 import { IonButtons, IonMenuButton, IonPage } from '@ionic/react';
 import HorizontallyScrollableComponent from '../utilites/Scroller';
+import TabItems from '../TabItems';
 
 function Home() {
   return (
@@ -13,7 +14,22 @@ function Home() {
             <IonTitle>Menu Content</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <IonContent className="ion-padding">This is the menu content.</IonContent>
+        <IonContent className="ion-padding">
+          <IonList>
+            <IonItem routerLink="/login">
+              <IonLabel>Login/Register</IonLabel>
+            </IonItem>
+            <IonItem routerLink="/placement">
+              <IonLabel>Placements</IonLabel>
+            </IonItem>
+            <IonItem routerLink="/enquiry">
+              <IonLabel>Enquiry</IonLabel>
+            </IonItem>
+            <IonItem routerLink="/about">
+              <IonLabel>About</IonLabel>
+            </IonItem>
+          </IonList>
+        </IonContent>
       </IonMenu>
 
       <IonPage id="main-content">

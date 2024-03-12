@@ -1,0 +1,30 @@
+// .about-container {
+//     background-image: url('https://wallpaperaccess.com/full/1209535.jpg');
+//     background-size: cover;
+//     background-position: center;
+//     // background-repeat: no-repeat;
+//     padding: 20px;
+//   }
+  
+//   ion-card {
+//     max-width: 600px;
+//     margin: auto;
+//     background-color: rgba(255, 255, 255, 0.9); /* Adjust the background color and opacity as needed */
+//   }
+.about-container {
+    background-image: url('http://dept.clcillinois.edu/web/nCov/ZoomBackgrounds/CLC_Grayslake_Zoom_Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Set the height to fill the entire viewport */
+    display: flex; /* Use flexbox to center content vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items:flex-start; /* Center content vertically */
+    padding: 20px;
+  }
+  
+  ion-card {
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the background color and opacity as needed */
+  }
+  

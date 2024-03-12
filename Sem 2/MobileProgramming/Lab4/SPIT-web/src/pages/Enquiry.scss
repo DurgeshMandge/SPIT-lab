@@ -1,0 +1,27 @@
+.enquiry-page {
+    background-image: url('https://marketingaccesspass.com/wp-content/uploads/2015/10/Podcast-Website-Design-Background-Image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+  .form-container {
+    background-color: rgba(118, 147, 222, 0.7); /* Semi-transparent black background */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  ion-input {
+    --background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background for input fields */
+    --color: black; /* Text color for input fields */
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  ion-button {
+    --background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background for buttons */
+    --color: black; /* Text color for buttons */
+    border-radius: 5px;
+  }
+  

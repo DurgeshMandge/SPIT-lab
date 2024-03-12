@@ -1,0 +1,16 @@
+// PlacementsStats.scss
+
+.placements-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url('https://www.picserver.org/assets/library/2020-10-24/originals/placement.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .placements-container {
+    max-width: 600px;
+  }
+  

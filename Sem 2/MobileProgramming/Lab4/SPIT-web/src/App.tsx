@@ -35,6 +35,10 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 import Tab5 from './pages/Tab5';
 import Tab4 from './pages/Tab4';
+import Login from './pages/Login';
+import Placements from './pages/Placements';
+import Enquiry from './pages/Enquiry';
+import About from './pages/About';
 
 setupIonicReact();
 
@@ -57,6 +61,18 @@ const App: React.FC = () => (
           </Route>
           <Route path="/tab5">
             <Tab5 />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/placement">
+            <Placements />
+          </Route>
+          <Route path="/enquiry">
+            <Enquiry />
+          </Route>
+          <Route path="/about">
+            <About />
           </Route>
           <Route exact path="/">
             <Redirect to="/tab1" />
